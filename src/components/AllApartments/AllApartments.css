@@ -1,11 +1,30 @@
 
 /* ...............card design................. */
+.showAll{
+    color: #007882;
+}
+.all-container{
+    margin: 0px 48px !important;
+}
+#cardsId::-webkit-scrollbar{
+    background-color: #CDD1D5;
+    height: 4px;
+}
+#cardsId::-webkit-scrollbar-thumb{
+    background-color: #007882;
+    width: 300px;
+}
 .cards {
-    margin: 0 auto;
+     padding-bottom: 33px;
+    /*margin: 0 auto;*/
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     justify-items: center;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
     
 }
 .card {
@@ -94,56 +113,14 @@ font-weight: 500;
 /*....................................................media quaries..............................*/
 
  
-/* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) and (max-width: 767px){
+/* screen devices (600px and above) */
+@media only screen and (min-width: 600px){
     .card{
         width:280px ;
         height: 360px;
     }
-    .cards { grid-template-columns: repeat(2, 1fr); }
-}
- 
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-
-}
- 
-/*Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) and (max-width: 1100px) {
-    .cards { grid-template-columns: repeat(3, 1fr); 
-    }
-    .card{
-        width: 280px;
-        height: 360px;
-    }
-
-}
-/*Big screen devices (1101px and above) */
-@media only screen and (min-width: 1101px) and (max-width: 1300px) {
-    .cards { grid-template-columns: repeat(3, 1fr); 
-    }
-
-}
- 
-/* Extra big screen devices (1300px and above) */
-@media only screen and (min-width: 1300px) {
-    .cards { grid-template-columns: repeat(4, 1fr); }
-    .card{
-        width: 300px;
-        height: 380px;
-    }
-
-}
-/* Extra big screen devices (1500px and above) */
-@media only screen and (min-width: 1600px) {
     .cards { grid-template-columns: repeat(5, 1fr); }
-    .card{
-        width: 320px;
-    }
+} 
 
-}
-
-  
 
   

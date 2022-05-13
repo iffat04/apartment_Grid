@@ -10,30 +10,36 @@ const data = [
 ]
 const AllApartments = () => {
     return (
-        <div className='px-3 mx-auto py-5'>
+        <div>
+
+        <div className='all-container px-3 mx-auto py-5'>
+            
            <div className='py-4 d-flex justify-content-between align-items-center'>
-            <span>
-           <h1 className='text-start'>All Apartment</h1>
-           </span>
-           <span>          
-            <p>Show All ></p>
-            </span>
+                <span>
+                <h1 className='text-start section-title'>All Apartment</h1>
+                </span>
+                <span className='showAll'>          
+                <p>Show All  <i class="fas fa-angle-right"></i> </p>
+                </span>
            </div>
 
-            <div className="cards">
+            <div className="cards" id="cardsId">
 
                 {
 
                     data.map(apartment=><div key={apartment.id} class="card">
                     <div className="card-image">
-                        <SingleApartment />
+                        <SingleApartment id={apartment.id} />
                     </div>
                     <div className='floating-icon'><i class="far fa-heart"></i></div>
                     <div className='card-body'>
                         <div className='d-flex flex-start'style={{fontWeight:"500", fontSize:"18px"}} ><p>5300 Lakeside, Newyork</p></div>
                         <div className='info-middle d-flex flex-start align-items-center mb-3'>
                             <button className='button-buy'>{apartment.type}</button>
-                            <span style={{fontSize:"18px"}}>$1400</span>
+                            <span style={{fontSize:"18px"}}>$1450</span>
+                            {apartment.type==='For Rent' &&
+                                        <span style={{fontSize:"14px",color:"grey",textDecoration:"line-through", marginLeft:"20px"}} >$1650</span>
+                            }
                         </div>
                         <div className='info d-flex justify-content-between'>
                             <span><i className="fas fa-border-style"></i> 1150 sqft</span>
@@ -46,7 +52,7 @@ const AllApartments = () => {
             </div>
 
             </div>
-    
+        </div>
 
     );
 };
