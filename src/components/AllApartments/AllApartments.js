@@ -6,7 +6,10 @@ const data = [
 { "id": 2, "image": "./images/apartment2.jpg","type":"For Rent"},
 { "id": 3, "image": "./images/apartment3.jpg","type":"For Buy"},
 { "id": 4, "image": "./images/apartment4.jpg","type":"For Rent"},
-{ "id": 5, "image": "./images/apartment5.jpg","type":"For Rent"}
+{ "id": 5, "image": "./images/apartment5.jpg","type":"For Rent"},
+{ "id": 6, "image": "./images/apartment3.jpg","type":"For Buy"},
+{ "id": 7, "image": "./images/apartment4.jpg","type":"For Rent"},
+{ "id": 8, "image": "./images/apartment5.jpg","type":"For Rent"}
 ]
 const AllApartments = () => {
     return (

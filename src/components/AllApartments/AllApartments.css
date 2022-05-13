@@ -12,7 +12,7 @@
 }
 #cardsId::-webkit-scrollbar-thumb{
     background-color: #007882;
-    width: 300px;
+    width: 100px;
 }
 .cards {
      padding-bottom: 33px;
@@ -23,7 +23,7 @@
     justify-content: flex-start;
     justify-items: center;
     max-width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     
 }
@@ -114,13 +114,15 @@ font-weight: 500;
 
  
 /* screen devices (600px and above) */
+
+
 @media only screen and (min-width: 600px){
     .card{
         width:280px ;
         height: 360px;
     }
-    .cards { grid-template-columns: repeat(5, 1fr); }
-} 
+    .cards { grid-template-columns: repeat(8, 1fr); }
+}
 
 
   
