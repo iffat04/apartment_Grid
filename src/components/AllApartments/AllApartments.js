@@ -17,7 +17,7 @@ const AllApartments = () => {
 
         <div className='all-container px-3 mx-auto py-5'>
             
-           <div className='py-4 d-flex justify-content-between align-items-center'>
+           <div className=' py-4 d-flex justify-content-between align-items-center'>
                 <span>
                 <h1 className='text-start section-title'>All Apartment</h1>
                 </span>

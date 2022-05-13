@@ -3,9 +3,7 @@
 .showAll{
     color: #007882;
 }
-.all-container{
-    margin: 0px 48px !important;
-}
+
 #cardsId::-webkit-scrollbar{
     background-color: #CDD1D5;
     height: 4px;
@@ -122,6 +120,10 @@ font-weight: 500;
         height: 360px;
     }
     .cards { grid-template-columns: repeat(8, 1fr); }
+    .all-container{
+        margin: 0px 48px !important;
+
+    }
 }
 
 
